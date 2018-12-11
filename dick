@@ -1,0 +1,539 @@
+#include "pch.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void board() {
+
+	cout << " Please choose a category and a letter within each category" << endl;
+
+	cout << "|========================================================================|\n";
+	cout << "|   MUSIC   | LITERATURE |  HISTORY  |   PEOPLE  |  SCIENCE  | CHRISTMAS |\n";
+	cout << "|===========|============|===========|===========|===========|===========|\n";
+	cout << "|  100  (a) |  100  (a)  |  100  (a) |  100  (a) |  100  (a) |  100  (a) |\n";
+	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
+	cout << "|  200  (b) |  200  (b)  |  200  (b) |  200  (b) |  200  (b) |  200  (b) |\n";
+	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
+	cout << "|  300  (c) |  300  (c)  |  300  (c) |  300  (c) |  300  (c) |  300  (c) |\n";
+	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
+	cout << "|  400  (d) |  400  (d)  |  400  (d) |  400  (d) |  400  (d) |  400  (d) |\n";
+	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
+	cout << "|  500  (e) |  500  (e)  |  500  (e) |  500  (e) |  500  (e) |  500  (e) |\n";
+	cout << "|========================================================================|\n";
+}
+
+void questionMusic(char choice) {
+	int a1 = 0;
+	int b1 = 0;
+	int c1 = 0;
+	int d1 = 0;
+	int e1 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 'a':
+		cout << "question" << endl;
+
+		cin >> answer;
+		
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		 a1 = 100;
+		else {
+			a1 = -100;
+		}
+
+		break;
+	case 'b':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			b1 = 200;
+		else {
+			b1 = -200;
+		}
+
+		break;
+	case 'c':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			c1 = 300;
+		else {
+			c1 = -300;
+		}
+
+		break;
+	case 'd':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			d1 = 400;
+		else {
+			d1 = -400;
+		}
+
+		break;
+	case 'e':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			e1 = 500;
+		else {
+			e1 = -500;
+		}
+
+		break;
+	default:
+		
+
+	}
+
+}
+
+void questionLiterature(char choice) {
+	int a2 = 0;
+	int b2 = 0;
+	int c2 = 0;
+	int d2 = 0;
+	int e2 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 'a':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			a2 = 100;
+		else {
+			a2 = -100;
+		}
+
+		break;
+	case 'b':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			b2 = 200;
+		else {
+			b2 = -200;
+		}
+
+		break;
+	case 'c':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			c2 = 300;
+		else {
+			c2 = -300;
+		}
+
+		break;
+	case 'd':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			d2 = 400;
+		else {
+			d2 = -400;
+		}
+
+		break;
+	case 'e':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			e2 = 400;
+		else {
+			e2 = -400;
+		}
+
+		break;
+	default:
+
+
+	}
+
+}
+
+void questionHistory(char choice) {
+	int a3 = 0;
+	int b3 = 0;
+	int c3 = 0;
+	int d3 = 0;
+	int e3 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 'a':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			a3 = 100;
+		else {
+			a3 = -100;
+		}
+
+		break;
+	case 'b':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			b3 = 200;
+		else {
+			b3 = -200;
+		}
+
+		break;
+	case 'c':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			c3 = 300;
+		else {
+			c3 = -300;
+		}
+
+		break;
+	case 'd':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			d3 = 400;
+		else {
+			d3 = -400;
+		}
+
+		break;
+	case 'e':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			e3 = 500;
+		else {
+			e3 = -500;
+		}
+
+		break;
+	default:
+
+
+	}
+
+}
+
+void questionPeople(char choice) {
+	int a4 = 0;
+	int b4 = 0;
+	int c4 = 0;
+	int d4 = 0;
+	int e4 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 'a':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") 
+			a4 = 100;
+
+		else {
+			a4 = -100;
+		}
+
+		break;
+	case 'b':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			b4 = 200;
+		else {
+			b4 = -200;
+		}
+
+		break;
+	case 'c':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			c4 = 300;
+		else {
+			c4 = -300;
+		}
+
+		break;
+	case 'd':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			d4 = 400;
+		else {
+			d4 = -400;
+		}
+
+		break;
+	case 'e':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			e4 = 500;
+		else {
+			e4 = -500;
+		}
+
+		break;
+	default:
+
+
+	}
+
+}
+
+void questionScience(char choice) {
+	int a5 = 0;
+	int b5 = 0;
+	int c5 = 0;
+	int d5 = 0;
+	int e5 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 'a':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			a5 = 100;
+		else {
+			a5 = -100;
+		}
+
+		break;
+	case 'b':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			b5 = 200;
+		else {
+			b5 = -200;
+		}
+
+		break;
+	case 'c':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			c5 = 300;
+		else {
+			c5 = -300;
+		}
+
+		break;
+	case 'd':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			d5 = 400;
+		else {
+			d5 = -400;
+		}
+
+		break;
+	case 'e':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			e5 = 500;
+		else {
+			e5 = -500;
+		}
+
+		break;
+	default:
+
+
+	}
+
+}
+
+void questionChristmas(char choice) {
+	int a6 = 0;
+	int b6 = 0;
+	int c6 = 0;
+	int d6 = 0;
+	int e6 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 'a':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			a6 = 100;
+		else {
+			a6 = -100;
+		}
+
+		break;
+	case 'b':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			b6 = 200;
+		else {
+			b6 = -200;
+		}
+
+		break;
+	case 'c':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			c6 = 300;
+		else {
+			c6 = -300;
+		}
+
+		break;
+	case 'd':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			d6 = 400;
+		else {
+			d6 = -400;
+		}
+
+		break;
+	case 'e':
+		cout << "question" << endl;
+
+		cin >> answer;
+
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+			e6 = 500;
+		else {
+			e6 = -500;
+		}
+
+		break;
+	default:
+
+
+	}
+
+}
+
+
+int main()
+{
+	string name;
+	string category;
+	char choice;
+	int points = 0;
+	
+	cout << "What is your name?" << endl;
+	
+	cin >> name;
+	
+	cout << "Welcome To Jeopardy " << name << "!" << endl;
+	
+	cout << "The rules are simple:" << endl;
+	
+	cout << "1. Make sure you answer each question with a question in the format - what is ... / who is ... / when was ..." << endl;
+	
+	cout << "2. You win the number of points assigned to each question if you get it right, but lose the number of points assigned to each question if you get it wrong" << endl;
+	
+	//cout << "3. You have 30 seconds to answer each question" << endl;
+	
+	cout << "4. Have fun!" << endl;
+	
+	cout << "Lets get started!!" << endl;
+	
+	cout << "Today we have 6 categories: MUSIC - LITERATURE - HISTORY - PEOPLE - SCIENCE - CHRISTMAS" << endl;
+
+	for(int i = 1; i <= 30; i++) {
+		board();
+		cin >> category;
+		cin >> choice;
+		if (category == "music" || category == "Music" || category == "MUSIC")
+			questionMusic(choice);
+		else if (category == "literature" || category == "Literature" || category == "LITERATURE")
+			questionLiterature(choice);
+		else if (category == "history" || category == "History" || category == "HISTORY")
+			questionHistory(choice);
+		else if (category == "people" || category == "People" || category == "PEOPLE")
+			questionPeople(choice);
+		else if (category == "science" || category == "Science" || category == "SCIENCE")
+			questionScience(choice);
+		else if (category == "christmas" || category == "Christmas" || category == "CHRISTMAS")
+			questionChristmas(choice);
+		
+			
+	}
+		
+		
+
+}
