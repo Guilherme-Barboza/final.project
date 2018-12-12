@@ -1,7 +1,9 @@
 // THEO , the program below works, give it a go and edit where you feel will is necessary
+// We made it reach 1000 lines and it's error free
 // THANKS FOR THE HELP
 // LIFE SAVER
 // <3
+// PAUL IS OFFERING A FREE BLOWJOB
 
 #include "pch.h"
 #include <iostream>
@@ -11,21 +13,22 @@ using namespace std;
 
 void board(string boardArray[]) {
 
-	cout << " Please choose a category and a letter within each category" << endl;
+	cout << "|=============================================================================================|" << endl;
+	cout << "|   MUSIC   | LITERATURE |  HISTORY  |  PEOPLE  |  SCIENCE  | CHRISTMAS |  FILMS  | ATHLETICS |" << endl;
+	cout << "|===========|============|===========|==========|===========|===========|=========|===========|" << endl;
+	cout << "|    " << boardArray[0] << "    |    " << boardArray[1] << "     |    " << boardArray[2] << "    |    " << boardArray[3] << "   |    " << boardArray[4] << "    |    " << boardArray[5] << "    |   " << boardArray[6] << "   |    " << boardArray[7] << "    |" << endl;
+	cout << "|-----------|------------|-----------|----------|-----------|-----------|---------|-----------|" << endl;
+	cout << "|    " << boardArray[8] << "    |    " << boardArray[9] << "     |    " << boardArray[10] << "    |    " << boardArray[11] << "   |    " << boardArray[12] << "    |    " << boardArray[13] << "    |   " << boardArray[14] << "   |    " << boardArray[15] << "    |" << endl;
+	cout << "|-----------|------------|-----------|----------|-----------|-----------|---------|-----------|" << endl;
+	cout << "|    " << boardArray[16] << "    |    " << boardArray[17] << "     |    " << boardArray[18] << "    |    " << boardArray[19] << "   |    " << boardArray[20] << "    |    " << boardArray[21] << "    |   " << boardArray[22] << "   |    " << boardArray[23] << "    |" << endl;
+	cout << "|-----------|------------|-----------|----------|-----------|-----------|---------|-----------|" << endl;
+	cout << "|    " << boardArray[24] << "    |    " << boardArray[25] << "     |    " << boardArray[26] << "    |    " << boardArray[27] << "   |    " << boardArray[28] << "    |    " << boardArray[29] << "    |   " << boardArray[30] << "   |    " << boardArray[31] << "    |" << endl;
+	cout << "|-----------|------------|-----------|----------|-----------|-----------|---------|-----------|" << endl;
+	cout << "|    " << boardArray[32] << "    |    " << boardArray[33] << "     |    " << boardArray[34] << "    |    " << boardArray[35] << "   |    " << boardArray[36] << "    |    " << boardArray[37] << "    |   " << boardArray[38] << "   |    " << boardArray[39] << "    |" << endl;
+	cout << "|=============================================================================================|" << endl; 
+    
+	cout << " Please choose a category and the points:" << endl;
 
-	cout << "|========================================================================|\n";
-	cout << "|   MUSIC   | LITERATURE |  HISTORY  |   PEOPLE  |  SCIENCE  | CHRISTMAS |\n";
-	cout << "|===========|============|===========|===========|===========|===========|\n";
-	cout << "|    " << boardArray[0] << "    |    " << boardArray[1] << "     |    " << boardArray[2] << "    |    " << boardArray[3] << "    |    " << boardArray[4] << "    |    " << boardArray[5] << "    |\n";
-	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|    " << boardArray[6] << "    |    " << boardArray[7] << "     |    " << boardArray[8] << "    |    " << boardArray[9] << "    |    " << boardArray[10] << "    |    " << boardArray[11] << "    |\n";
-	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|    " << boardArray[12] << "    |    " << boardArray[13] << "     |    " << boardArray[14] << "    |    " << boardArray[15] << "    |    " << boardArray[16] << "    |    " << boardArray[17] << "    |\n";
-	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|    " << boardArray[18] << "    |    " << boardArray[19] << "     |    " << boardArray[20] << "    |    " << boardArray[21] << "    |    " << boardArray[22] << "    |    " << boardArray[23] << "    |\n";
-	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|    " << boardArray[24] << "    |    " << boardArray[25] << "     |    " << boardArray[26] << "    |    " << boardArray[27] << "    |    " << boardArray[28] << "    |    " << boardArray[29] << "    |\n";
-	cout << "|========================================================================|\n";
 }
 
 int questionMusic(int choice) {
@@ -68,7 +71,7 @@ int questionMusic(int choice) {
 		else {
 			b1 = -200;
 			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
-			cout << "The correct answer is: who is the rolling stones " << endl;
+			cout << "The correct answer is: who is the rolling stones" << endl;
 		}
 
 		break;
@@ -102,7 +105,7 @@ int questionMusic(int choice) {
 		else {
 			d1 = -400;
 			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
-			cout << "The correct answer is: what is mary had a little lamb " << endl;
+			cout << "The correct answer is: what is mary had a little lamb" << endl;
 		}
 
 		break;
@@ -119,7 +122,7 @@ int questionMusic(int choice) {
 		else {
 			e1 = -500;
 			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
-			cout << "The correct answer is: who is mancini " << endl;
+			cout << "The correct answer is: who is mancini" << endl;
 		}
 
 		break;
@@ -142,7 +145,7 @@ int questionLiterature(int choice) {
 
 	switch (choice) {
 	case 100:
-		cout << "If Orwell's tale were true, year Big Brother would be watching you " << endl;
+		cout << "If Orwell's tale were true, year Big Brother would be watching you" << endl;
 
 		cin.ignore();
 		getline(cin, answer);
@@ -154,7 +157,7 @@ int questionLiterature(int choice) {
 		else {
 			a2 = -100;
 			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
-			cout << "The correct answer is: what is 1984 " << endl;
+			cout << "The correct answer is: what is 1984" << endl;
 		}
 
 		break;
@@ -171,7 +174,7 @@ int questionLiterature(int choice) {
 		else {
 			b2 = -200;
 			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
-			cout << "The correct answer is: who is long john silver " << endl;
+			cout << "The correct answer is: who is long john silver" << endl;
 		}
 
 		break;
@@ -188,7 +191,7 @@ int questionLiterature(int choice) {
 		else {
 			c2 = -300;
 			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
-			cout << "The correct answer is: what is lamb or what is charles lamb " << endl;
+			cout << "The correct answer is: what is lamb or what is charles lamb" << endl;
 		}
 
 		break;
@@ -205,7 +208,7 @@ int questionLiterature(int choice) {
 		else {
 			d2 = -400;
 			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
-			cout << "The correct answer is: what is the comedy of errors " << endl;
+			cout << "The correct answer is: what is the comedy of errors" << endl;
 		}
 
 		break;
@@ -222,7 +225,7 @@ int questionLiterature(int choice) {
 		else {
 			e2 = -500;
 			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
-			cout << "The correct answer is: what is mutiny on the bounty " << endl;
+			cout << "The correct answer is: what is mutiny on the bounty" << endl;
 		}
 
 		break;
@@ -274,7 +277,7 @@ int questionHistory(int choice) {
 		else {
 			b3 = -200;
 			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
-			cout << "The correct answer is: who is truman or who is harry truman " << endl;
+			cout << "The correct answer is: who is truman or who is harry truman" << endl;
 		}
 
 		break;
@@ -308,7 +311,7 @@ int questionHistory(int choice) {
 		else {
 			d3 = -400;
 			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
-			cout << "The correct answer is: who is castro or who is fidel castro " << endl;
+			cout << "The correct answer is: who is castro or who is fidel castro" << endl;
 		}
 
 		break;
@@ -325,7 +328,7 @@ int questionHistory(int choice) {
 		else {
 			e3 = -500;
 			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
-			cout << "The correct answer is: who is princess caroline " << endl;
+			cout << "The correct answer is: who is princess caroline" << endl;
 		}
 
 		break;
@@ -348,7 +351,7 @@ int questionPeople(int choice) {
 
 	switch (choice) {
 	case 100:
-		cout << "´´Lafayette, we are here´, reffered to Americans landing in this country" << endl;
+		cout << "´Lafayette, we are here´, reffered to Americans landing in this country" << endl;
 
 		cin.ignore();
 		getline(cin, answer);
@@ -360,7 +363,7 @@ int questionPeople(int choice) {
 		else {
 			a4 = -100;
 			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
-			cout << "The correct answer is: what is france " << endl;
+			cout << "The correct answer is: what is france" << endl;
 		}
 
 		break;
@@ -377,12 +380,12 @@ int questionPeople(int choice) {
 		else {
 			b4 = -200;
 			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
-			cout << "The correct answer is: what is submarine or what is a submarine " << endl;
+			cout << "The correct answer is: what is submarine or what is a submarine" << endl;
 		}
 
 		break;
 	case 300:
-		cout << "Macedonian who lamented there was nothing left to conquer, he died in Babylon at 33" << endl;
+		cout << "Macedonian who lamented there was nothing left to conquer, he died in Babylon at age 33" << endl;
 
 		cin.ignore();
 		getline(cin, answer);
@@ -411,7 +414,7 @@ int questionPeople(int choice) {
 		else {
 			d4 = -400;
 			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
-			cout << "The correct answer is: who is charlemange or who is charles the great " << endl;
+			cout << "The correct answer is: who is charlemange or who is charles the great" << endl;
 		}
 
 		break;
@@ -463,7 +466,7 @@ int questionScience(int choice) {
 		else {
 			a5 = -100;
 			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
-			cout << "The correct answer is: what is carbonation " << endl;
+			cout << "The correct answer is: what is carbonation" << endl;
 		}
 
 		break;
@@ -514,7 +517,7 @@ int questionScience(int choice) {
 		else {
 			d5 = -400;
 			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
-			cout << "The correct answer is: what is lead " << endl;
+			cout << "The correct answer is: what is lead" << endl;
 		}
 
 		break;
@@ -531,7 +534,7 @@ int questionScience(int choice) {
 		else {
 			e5 = -500;
 			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
-			cout << "The correct answer is: what is a fifth " << endl;
+			cout << "The correct answer is: what is a fifth" << endl;
 		}
 
 		break;
@@ -566,7 +569,7 @@ int questionChristmas(int choice) {
 		else {
 			a6 = -100;
 			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
-			cout << "The correct answer is: what is give a kiss or what is kiss " << endl;
+			cout << "The correct answer is: what is give a kiss or what is kiss" << endl;
 		}
 
 		break;
@@ -600,7 +603,7 @@ int questionChristmas(int choice) {
 		else {
 			c6 = -300;
 			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
-			cout << "The correct answer is: what is it´s a wonderful life " << endl;
+			cout << "The correct answer is: what is it´s a wonderful life" << endl;
 		}
 
 		break;
@@ -617,7 +620,7 @@ int questionChristmas(int choice) {
 		else {
 			d6 = -400;
 			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
-			cout << "The correct answer is: what is germany " << endl;
+			cout << "The correct answer is: what is germany" << endl;
 		}
 
 		break;
@@ -634,7 +637,7 @@ int questionChristmas(int choice) {
 		else {
 			e6 = -500;
 			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
-			cout << "The correct answer is: what is the settlement " << endl;
+			cout << "The correct answer is: what is the settlement" << endl;
 		}
 
 		break;
@@ -646,6 +649,211 @@ int questionChristmas(int choice) {
 	return a6 + b6 + c6 + d6 + e6;
 }
 
+int questionMovies(int choice) {
+	int a7 = 0;
+	int b7 = 0;
+	int c7 = 0;
+	int d7 = 0;
+	int e7 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 100:
+		cout << "Donald Sutherland said he flashed his tush in this Belushi frat film after the director said it was just for the movie's dailies" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is animal house") {
+			a7 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
+		else {
+			a7 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
+			cout << "The correct answer is: what is animal house" << endl;
+		}
+
+		break;
+	case 200:
+		cout << "Leaving the West Coast, we retrace the movie journey of this 1981 adventure film character on his way to Nepal" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "who is indiana jones") {
+			b7 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
+		else {
+			b7 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
+			cout << "The correct answer is: who is indiana jones" << endl;
+		}
+
+		break;
+	case 300:
+		cout << "This character snapped his fingers and wiped out half of the population of the universe" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "who is thanos") {
+			c7 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
+		else {
+			c7 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
+			cout << "The correct answer is: who is thanos" << endl;
+		}
+
+		break;
+	case 400:
+		cout << "Earth's potential fate is not so excellent with Keanu Reeves as Klaatu in the 2008 remake of this 1951 film" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is the day the earth stood still") {
+			d7 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
+		else {
+			d7 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
+			cout << "The correct answer is: what is the day the earth stood still" << endl;
+		}
+
+		break;
+	case 500:
+		cout << "For ‘On the Waterfront’, Elia Kazan originally cast this singer who Kazan said ‘spoke perfect Hobokenese’" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "who is frank sinatra") {
+			e7 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
+		else {
+			e7 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
+			cout << "The correct answer is: who is frank sinatra" << endl;
+		}
+
+		break;
+	default:
+		cout << "INVALID CHOICE" << endl;
+
+	}
+
+	return a7 + b7 + c7 + d7 + e7;
+}
+
+int questionSports(int choice) {
+	int a8 = 0;
+	int b8 = 0;
+	int c8 = 0;
+	int d8 = 0;
+	int e8 = 0;
+
+	string answer;
+
+	switch (choice) {
+	case 100:
+		cout << "In 2017 LeBron James helped this team get 25 3-pointers, an NBA single-game record" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is the cavaliers") {
+			a8 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
+		else {
+			a8 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
+			cout << "The correct answer is: what is the cavaliers" << endl;
+		}
+
+		break;
+	case 200:
+		cout << " Björn Borg's famous 2-handed backhand grip was perhaps a result of playing this winter sport as a youngster in Sweden" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is ice hockey") {
+			b8 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
+		else {
+			b8 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
+			cout << "The correct answer is: what is ice hockey" << endl;
+		}
+
+		break;
+	case 300:
+		cout << "Mike Pence called this 1986 hoops movie ‘the greatest sports film’ & screened it on Air Force 2 using his own copy" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is hoosiers") {
+			c8 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
+		else {
+			c8 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
+			cout << "The correct answer is: what is hoosiers" << endl;
+		}
+
+		break;
+	case 400:
+		cout << "It wasn't perfect, but the Dodgers used 4 pitchers to get this hyphenated type of win in a 2018 game vs. the Padres" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is a no hitter") {
+			d8 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
+		else {
+			d8 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
+			cout << "The correct answer is: what is a no hitter" << endl;
+		}
+
+		break;
+	case 500:
+		cout << "Lexi Thompson lost a 2017 LPGA tourney after improperly placing a ball & then turning in one of these" << endl;
+
+		cin.ignore();
+		getline(cin, answer);
+
+		if (answer == "what is an incorrect scorecard") {
+			e8 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
+		else {
+			e8 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
+			cout << "The correct answer is: what is an incorrect scorecard" << endl;
+		}
+
+		break;
+	default:
+		cout << "INVALID CHOICE" << endl;
+
+	}
+
+	return a8 + b8 + c8 + d8 + e8;
+}
 
 int main()
 {
@@ -659,7 +867,7 @@ int main()
 	
 	cin >> name;
 	
-	cout << "Welcome To Jeopardy " << name << "!" << endl;
+	cout << "This is Jeopardy (the hard version) " << name << "!" << endl;
 	
 	cout << "The rules are simple:" << endl;
 	
@@ -673,7 +881,7 @@ int main()
 	
 	cout << "Lets get started!!" << endl;
 	
-	cout << "Today we have 6 categories: MUSIC - LITERATURE - HISTORY - PEOPLE - SCIENCE - CHRISTMAS" << endl;
+	cout << "Today we have 8 categories: MUSIC - LITERATURE - HISTORY - PEOPLE - SCIENCE - CHRISTMAS - MOVIES - ATHLETICS" << endl;
 
 	string a = "100";
 	string b = "200";
@@ -682,9 +890,9 @@ int main()
 	string e = "500";
 	string filler = "---";
 
-	string boardArray[] = { a,a,a,a,a,a,b,b,b,b,b,b,c,c,c,c,c,c,d,d,d,d,d,d,e,e,e,e,e,e,"" };
+	string boardArray[] = { a,a,a,a,a,a,a,a,b,b,b,b,b,b,b,b,c,c,c,c,c,c,c,c,d,d,d,d,d,d,d,d,e,e,e,e,e,e,e,e,"" };
 
-	for (int i = 1; i <= 30; i++) {
+	for (int i = 1; i <= 40; i++) {
 		board(boardArray);
 		cin >> category;
 
@@ -697,141 +905,198 @@ int main()
 
 		cin >> choice;
 
-		int changeBoard = 30;
+		int changeBoard = 40;
 
 		if (categoryChar == 'M') {
-			cout << "Your category: Music" << endl;
+			cout << "Music for " << choice << " points:" << endl;
 			catcher = questionMusic(choice);
 			if (choice == 100) {
 				changeBoard = 0;
 			}
 			else if (choice == 200) {
-				changeBoard = 6;
-			}
-			else if (choice == 300) {
-				changeBoard = 12;
-			}
-			else if (choice == 400) {
-				changeBoard = 18;
-			}
-			else if (choice == 500) {
-				changeBoard = 24;
-			}
-
-			boardArray[changeBoard] = filler;
-		}
-		else if (categoryChar == 'L') {
-			cout << "Your category: Literature" << endl;
-			catcher = questionLiterature(choice);
-			if (choice == 100) {
-				changeBoard = 1;
-			}
-			else if (choice == 200) {
-				changeBoard = 7;
-			}
-			else if (choice == 300) {
-				changeBoard = 13;
-			}
-			else if (choice == 400) {
-				changeBoard = 19;
-			}
-			else if (choice == 500) {
-				changeBoard = 25;
-			}
-
-			boardArray[changeBoard] = filler;
-		}
-		else if (categoryChar == 'H') {
-			cout << "Your category: History" << endl;
-			catcher = questionHistory(choice);
-			if (choice == 100) {
-				changeBoard = 2;
-			}
-			else if (choice == 200) {
 				changeBoard = 8;
-			}
-			else if (choice == 300) {
-				changeBoard = 14;
-			}
-			else if (choice == 400) {
-				changeBoard = 20;
-			}
-			else if (choice == 500) {
-				changeBoard = 26;
-			}
-
-			boardArray[changeBoard] = filler;
-		}
-		else if (categoryChar == 'P') {
-			cout << "Your category: People" << endl;
-			catcher = questionPeople(choice);
-			if (choice == 100) {
-				changeBoard = 3;
-			}
-			else if (choice == 200) {
-				changeBoard = 9;
-			}
-			else if (choice == 300) {
-				changeBoard = 15;
-			}
-			else if (choice == 400) {
-				changeBoard = 21;
-			}
-			else if (choice == 500) {
-				changeBoard = 27;
-			}
-
-			boardArray[changeBoard] = filler;
-		}
-		else if (categoryChar == 'S') {
-			cout << "Your category: Science" << endl;
-			catcher = questionScience(choice);
-			if (choice == 100) {
-				changeBoard = 4;
-			}
-			else if (choice == 200) {
-				changeBoard = 10;
 			}
 			else if (choice == 300) {
 				changeBoard = 16;
 			}
 			else if (choice == 400) {
-				changeBoard = 22;
+				changeBoard = 24;
 			}
 			else if (choice == 500) {
-				changeBoard = 28;
+				changeBoard = 32;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
-		else if (categoryChar == 'C') {
-			cout << "Your category: Christmas" << endl;
-			catcher = questionChristmas(choice);
-
+		
+		else if (categoryChar == 'L') {
+			cout << "Literature for " << choice << " points:" << endl;
+			catcher = questionLiterature(choice);
 			if (choice == 100) {
-				changeBoard = 5;
+				changeBoard = 1;
 			}
 			else if (choice == 200) {
-				changeBoard = 11;
+				changeBoard = 9;
 			}
 			else if (choice == 300) {
 				changeBoard = 17;
 			}
 			else if (choice == 400) {
-				changeBoard = 23;
+				changeBoard = 25;
 			}
 			else if (choice == 500) {
+				changeBoard = 33;
+			}
+
+			boardArray[changeBoard] = filler;
+		}
+		
+		else if (categoryChar == 'H') {
+			cout << "History for " << choice << " points:" << endl;
+			catcher = questionHistory(choice);
+			if (choice == 100) {
+				changeBoard = 2;
+			}
+			else if (choice == 200) {
+				changeBoard = 10;
+			}
+			else if (choice == 300) {
+				changeBoard = 18;
+			}
+			else if (choice == 400) {
+				changeBoard = 26;
+			}
+			else if (choice == 500) {
+				changeBoard = 34;
+			}
+
+			boardArray[changeBoard] = filler;
+		}
+		
+		else if (categoryChar == 'P') {
+			cout << "People for " << choice << " points:" << endl;
+			catcher = questionPeople(choice);
+			if (choice == 100) {
+				changeBoard = 3;
+			}
+			else if (choice == 200) {
+				changeBoard = 11;
+			}
+			else if (choice == 300) {
+				changeBoard = 19;
+			}
+			else if (choice == 400) {
+				changeBoard = 27;
+			}
+			else if (choice == 500) {
+				changeBoard = 35;
+			}
+
+			boardArray[changeBoard] = filler;
+		}
+		
+		else if (categoryChar == 'S') {
+			cout << "Science for " << choice << " points:"<< endl;
+			catcher = questionScience(choice);
+			if (choice == 100) {
+				changeBoard = 4;
+			}
+			else if (choice == 200) {
+				changeBoard = 12;
+			}
+			else if (choice == 300) {
+				changeBoard = 20;
+			}
+			else if (choice == 400) {
+				changeBoard = 28;
+			}
+			else if (choice == 500) {
+				changeBoard = 36;
+			}
+
+			boardArray[changeBoard] = filler;
+		}
+		
+		else if (categoryChar == 'C') {
+		cout << "Christmas for " << choice << " points:" << endl;
+		catcher = questionChristmas(choice);
+
+			if (choice == 100) {
+				changeBoard = 5;
+			}
+			else if (choice == 200) {
+				changeBoard = 13;
+			}
+			else if (choice == 300) {
+				changeBoard = 21;
+			}
+			else if (choice == 400) {
 				changeBoard = 29;
+			}
+			else if (choice == 500) {
+				changeBoard = 37;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
 
+		else if (categoryChar == 'F') {
+			cout << "Films for " << choice << " points:" << endl;
+			catcher = questionLiterature(choice);
+			if (choice == 100) {
+				changeBoard = 6;
+			}
+			else if (choice == 200) {
+				changeBoard = 14;
+			}
+			else if (choice == 300) {
+				changeBoard = 22;
+			}
+			else if (choice == 400) {
+				changeBoard = 30;
+			}
+			else if (choice == 500) {
+				changeBoard = 38;
+			}
+
+			boardArray[changeBoard] = filler;
+		}
+
+		else if (categoryChar == 'A') {
+		cout << "Athletics for " << choice << " points:" << endl;
+		catcher = questionLiterature(choice);
+		if (choice == 100) {
+			changeBoard = 9;
+		}
+		else if (choice == 200) {
+			changeBoard = 17;
+		}
+		else if (choice == 300) {
+			changeBoard = 25;
+		}
+		else if (choice == 400) {
+			changeBoard = 31;
+		}
+		else if (choice == 500) {
+			changeBoard = 39;
+		}
+
+		boardArray[changeBoard] = filler;
+		}
+
 		points = points + catcher;
 
+		cout << "You have " << points << " points" << endl;
+
 	}
-
+    
 	cout << "YOUR FINAL RESULT IS: " << points << "!" << endl;
-	cout << "CONGRATULATIONS!!!" << endl;
-
+	
+	if (points <= 0)		
+		cout << "Damn that sucks..." << endl;
+	else {
+		cout << "CONGRATULATIONS!!!" << endl;
+	}
+		
+	return 1;
 }
