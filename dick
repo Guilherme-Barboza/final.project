@@ -11,19 +11,19 @@ void board() {
 	cout << "|========================================================================|\n";
 	cout << "|   MUSIC   | LITERATURE |  HISTORY  |   PEOPLE  |  SCIENCE  | CHRISTMAS |\n";
 	cout << "|===========|============|===========|===========|===========|===========|\n";
-	cout << "|  100  (a) |  100  (a)  |  100  (a) |  100  (a) |  100  (a) |  100  (a) |\n";
+	cout << "|    100    |    100     |    100    |    100    |    100    |    100    |\n";
 	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|  200  (b) |  200  (b)  |  200  (b) |  200  (b) |  200  (b) |  200  (b) |\n";
+	cout << "|    200    |    200     |    200    |    200    |    200    |    200    |\n";
 	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|  300  (c) |  300  (c)  |  300  (c) |  300  (c) |  300  (c) |  300  (c) |\n";
+	cout << "|    300    |    300     |    300    |    300    |    300    |    300    |\n";
 	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|  400  (d) |  400  (d)  |  400  (d) |  400  (d) |  400  (d) |  400  (d) |\n";
+	cout << "|    400    |    400     |    400    |    400    |    400    |    400    |\n";
 	cout << "|-----------|------------|-----------|-----------|-----------|-----------|\n";
-	cout << "|  500  (e) |  500  (e)  |  500  (e) |  500  (e) |  500  (e) |  500  (e) |\n";
+	cout << "|    500    |    500     |    500    |    500    |    500    |    500    |\n";
 	cout << "|========================================================================|\n";
 }
 
-int questionMusic(char choice) {
+int questionMusic(int choice) {
 	int a1 = 0;
 	int b1 = 0;
 	int c1 = 0;
@@ -33,7 +33,7 @@ int questionMusic(char choice) {
 	string answer;
 
 	switch (choice) {
-	case 'a':
+	case 100:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -48,7 +48,7 @@ int questionMusic(char choice) {
 		}
 
 		break;
-	case 'b':
+	case 200:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -63,7 +63,7 @@ int questionMusic(char choice) {
 		}
 
 		break;
-	case 'c':
+	case 300:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -78,7 +78,7 @@ int questionMusic(char choice) {
 		}
 
 		break;
-	case 'd':
+	case 400:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -93,7 +93,7 @@ int questionMusic(char choice) {
 		}
 
 		break;
-	case 'e':
+	case 500:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -116,7 +116,7 @@ int questionMusic(char choice) {
 	return a1 + b1 + c1 + d1 + e1;
 }
 
-int questionLiterature(char choice) {
+int questionLiterature(int choice) {
 	int a2 = 0;
 	int b2 = 0;
 	int c2 = 0;
@@ -126,7 +126,7 @@ int questionLiterature(char choice) {
 	string answer;
 
 	switch (choice) {
-	case 'a':
+	case 100:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -141,7 +141,7 @@ int questionLiterature(char choice) {
 		}
 
 		break;
-	case 'b':
+	case 200:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -156,7 +156,7 @@ int questionLiterature(char choice) {
 		}
 
 		break;
-	case 'c':
+	case 300:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -171,7 +171,7 @@ int questionLiterature(char choice) {
 		}
 
 		break;
-	case 'd':
+	case 400:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -186,7 +186,7 @@ int questionLiterature(char choice) {
 		}
 
 		break;
-	case 'e':
+	case 500:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -209,7 +209,7 @@ int questionLiterature(char choice) {
 	return a2 + b2 + c2 + d2 + e2;
 }
 
-int questionHistory(char choice) {
+int questionHistory(int choice) {
 	int a3 = 0;
 	int b3 = 0;
 	int c3 = 0;
@@ -219,55 +219,67 @@ int questionHistory(char choice) {
 	string answer;
 
 	switch (choice) {
-	case 'a':
+	case 100:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			a3 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
 		else {
 			a3 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
 		}
 
 		break;
-	case 'b':
+	case 200:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			b3 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
 		else {
 			b3 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
 		}
 
 		break;
-	case 'c':
+	case 300:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			c3 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
 		else {
 			c3 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
 		}
 
 		break;
-	case 'd':
+	case 400:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			d3 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
 		else {
 			d3 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
 		}
 
 		break;
-	case 'e':
+	case 500:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -290,7 +302,7 @@ int questionHistory(char choice) {
 	return a3 + b3 + c3 + d3 + e3;
 }
 
-int questionPeople(char choice) {
+int questionPeople(int choice) {
 	int a4 = 0;
 	int b4 = 0;
 	int c4 = 0;
@@ -300,56 +312,67 @@ int questionPeople(char choice) {
 	string answer;
 
 	switch (choice) {
-	case 'a':
+	case 100:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") 
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			a4 = 100;
-
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
 		else {
 			a4 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
 		}
 
 		break;
-	case 'b':
+	case 200:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			b4 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
 		else {
 			b4 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
 		}
 
 		break;
-	case 'c':
+	case 300:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			c4 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
 		else {
 			c4 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
 		}
 
 		break;
-	case 'd':
+	case 400:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			d4 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
 		else {
 			d4 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
 		}
 
 		break;
-	case 'e':
+	case 500:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -372,7 +395,7 @@ int questionPeople(char choice) {
 	return a4 + b4 + c4 + d4 + e4;
 }
 
-int questionScience(char choice) {
+int questionScience(int choice) {
 	int a5 = 0;
 	int b5 = 0;
 	int c5 = 0;
@@ -382,55 +405,67 @@ int questionScience(char choice) {
 	string answer;
 
 	switch (choice) {
-	case 'a':
+	case 100:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			a5 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
 		else {
 			a5 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
 		}
 
 		break;
-	case 'b':
+	case 200:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			b5 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
 		else {
 			b5 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
 		}
 
 		break;
-	case 'c':
+	case 300:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			c5 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
 		else {
 			c5 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
 		}
 
 		break;
-	case 'd':
+	case 400:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			d5 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
 		else {
 			d5 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
 		}
 
 		break;
-	case 'e':
+	case 500:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -453,7 +488,7 @@ int questionScience(char choice) {
 	return a5 + b5 + c5 + d5 + e5;
 }
 
-int questionChristmas(char choice) {
+int questionChristmas(int choice) {
 	int a6 = 0;
 	int b6 = 0;
 	int c6 = 0;
@@ -463,55 +498,67 @@ int questionChristmas(char choice) {
 	string answer;
 
 	switch (choice) {
-	case 'a':
+	case 100:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			a6 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
 		else {
 			a6 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
 		}
 
 		break;
-	case 'b':
+	case 200:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			b6 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
 		else {
 			b6 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
 		}
 
 		break;
-	case 'c':
+	case 300:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			c6 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
 		else {
 			c6 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
 		}
 
 		break;
-	case 'd':
+	case 400:
 		cout << "question" << endl;
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			d6 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
 		else {
 			d6 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
 		}
 
 		break;
-	case 'e':
+	case 500:
 		cout << "question" << endl;
 
 		cin >> answer;
@@ -539,7 +586,7 @@ int main()
 {
 	string name;
 	string category;
-	char choice;
+	int choice;
 	int points = 0;
 	int catcher;
 	
@@ -563,7 +610,7 @@ int main()
 	
 	cout << "Today we have 6 categories: MUSIC - LITERATURE - HISTORY - PEOPLE - SCIENCE - CHRISTMAS" << endl;
 
-	for(int i = 1; i <= 30; i++) {
+	for(int i = 1; i <= 5; i++) { //change 5 to 30
 		board();
 
 		cin >> category;
