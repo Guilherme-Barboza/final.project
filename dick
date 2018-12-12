@@ -1,3 +1,8 @@
+// THEO , the program below works, give it a go and edit where you feel will is necessary
+// THANKS FOR THE HELP
+// LIFE SAVER
+// <3
+
 #include "pch.h"
 #include <iostream>
 #include <string>
@@ -675,7 +680,7 @@ int main()
 	string c = "300";
 	string d = "400";
 	string e = "500";
-	string filler = " --- ";
+	string filler = "---";
 
 	string boardArray[] = { a,a,a,a,a,a,b,b,b,b,b,b,c,c,c,c,c,c,d,d,d,d,d,d,e,e,e,e,e,e,"" };
 
@@ -683,143 +688,139 @@ int main()
 		board(boardArray);
 		cin >> category;
 
-		// parses User input of "category" in above line into an array of chars so that you can use the toupper() function
+		string tempCategory = category.substr(0, 1);
+		char tempCategoryChar;
+		char categoryChar;
+		
+		tempCategoryChar = category[0];
+		categoryChar = toupper(tempCategoryChar);
 
-		char tempArray[category.length() + 1];
-		strcpy(tempArray, category.c_str());
-
-		for (int i = 0; i < category.length() + 1; i++) {
-			tempArray[i] = toupper(tempArray[i]);
-		}
-
-		// end Parse.
-
-		// User input for choice
 		cin >> choice;
 
 		int changeBoard = 30;
-		if (tempArray[0] == 'M') {
-			cout << "Your category: Music." << endl;
+
+		if (categoryChar == 'M') {
+			cout << "Your category: Music" << endl;
 			catcher = questionMusic(choice);
-			if (toupper(choice) == '100') {
+			if (choice == 100) {
 				changeBoard = 0;
 			}
-			else if (toupper(choice) == '200') {
+			else if (choice == 200) {
 				changeBoard = 6;
 			}
-			else if (toupper(choice) == '300') {
+			else if (choice == 300) {
 				changeBoard = 12;
 			}
-			else if (toupper(choice) == '400') {
+			else if (choice == 400) {
 				changeBoard = 18;
 			}
-			else if (toupper(choice) == '500') {
+			else if (choice == 500) {
 				changeBoard = 24;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
-		else if (tempArray[0] == 'L') {
-			cout << "Your category: Literature." << endl;
+		else if (categoryChar == 'L') {
+			cout << "Your category: Literature" << endl;
 			catcher = questionLiterature(choice);
-			if (toupper(choice) == 'A') {
+			if (choice == 100) {
 				changeBoard = 1;
 			}
-			else if (toupper(choice) == 'B') {
+			else if (choice == 200) {
 				changeBoard = 7;
 			}
-			else if (toupper(choice) == 'C') {
+			else if (choice == 300) {
 				changeBoard = 13;
 			}
-			else if (toupper(choice) == 'D') {
+			else if (choice == 400) {
 				changeBoard = 19;
 			}
-			else if (toupper(choice) == 'E') {
+			else if (choice == 500) {
 				changeBoard = 25;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
-		else if (tempArray[0] == 'H') {
-			cout << "Your category: History." << endl;
+		else if (categoryChar == 'H') {
+			cout << "Your category: History" << endl;
 			catcher = questionHistory(choice);
-			if (toupper(choice) == 'A') {
+			if (choice == 100) {
 				changeBoard = 2;
 			}
-			else if (toupper(choice) == 'B') {
+			else if (choice == 200) {
 				changeBoard = 8;
 			}
-			else if (toupper(choice) == 'C') {
+			else if (choice == 300) {
 				changeBoard = 14;
 			}
-			else if (toupper(choice) == 'D') {
+			else if (choice == 400) {
 				changeBoard = 20;
 			}
-			else if (toupper(choice) == 'E') {
+			else if (choice == 500) {
 				changeBoard = 26;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
-		else if (tempArray[0] == 'P') {
-			cout << "Your category: People." << endl;
+		else if (categoryChar == 'P') {
+			cout << "Your category: People" << endl;
 			catcher = questionPeople(choice);
-			if (toupper(choice) == 'A') {
+			if (choice == 100) {
 				changeBoard = 3;
 			}
-			else if (toupper(choice) == 'B') {
+			else if (choice == 200) {
 				changeBoard = 9;
 			}
-			else if (toupper(choice) == 'C') {
+			else if (choice == 300) {
 				changeBoard = 15;
 			}
-			else if (toupper(choice) == 'D') {
+			else if (choice == 400) {
 				changeBoard = 21;
 			}
-			else if (toupper(choice) == 'E') {
+			else if (choice == 500) {
 				changeBoard = 27;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
-		else if (tempArray[0] == 'S') {
-			cout << "Your category: Science." << endl;
+		else if (categoryChar == 'S') {
+			cout << "Your category: Science" << endl;
 			catcher = questionScience(choice);
-			if (toupper(choice) == 'A') {
+			if (choice == 100) {
 				changeBoard = 4;
 			}
-			else if (toupper(choice) == 'B') {
+			else if (choice == 200) {
 				changeBoard = 10;
 			}
-			else if (toupper(choice) == 'C') {
+			else if (choice == 300) {
 				changeBoard = 16;
 			}
-			else if (toupper(choice) == 'D') {
+			else if (choice == 400) {
 				changeBoard = 22;
 			}
-			else if (toupper(choice) == 'E') {
+			else if (choice == 500) {
 				changeBoard = 28;
 			}
 
 			boardArray[changeBoard] = filler;
 		}
-		else if (tempArray[0] == 'C') {
-			cout << "Your category: Christmas." << endl;
+		else if (categoryChar == 'C') {
+			cout << "Your category: Christmas" << endl;
 			catcher = questionChristmas(choice);
 
-			if (toupper(choice) == 'A') {
+			if (choice == 100) {
 				changeBoard = 5;
 			}
-			else if (toupper(choice) == 'B') {
+			else if (choice == 200) {
 				changeBoard = 11;
 			}
-			else if (toupper(choice) == 'C') {
+			else if (choice == 300) {
 				changeBoard = 17;
 			}
-			else if (toupper(choice) == 'D') {
+			else if (choice == 400) {
 				changeBoard = 23;
 			}
-			else if (toupper(choice) == 'E') {
+			else if (choice == 500) {
 				changeBoard = 29;
 			}
 
@@ -830,7 +831,7 @@ int main()
 
 	}
 
-	cout << "YOUR FINAL RESULT IS: " << points << "!!" << endl;
-	cout << "CONGRATULATIONS" << endl;
+	cout << "YOUR FINAL RESULT IS: " << points << "!" << endl;
+	cout << "CONGRATULATIONS!!!" << endl;
 
 }
