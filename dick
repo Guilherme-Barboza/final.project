@@ -23,7 +23,7 @@ void board() {
 	cout << "|========================================================================|\n";
 }
 
-void questionMusic(char choice) {
+int questionMusic(char choice) {
 	int a1 = 0;
 	int b1 = 0;
 	int c1 = 0;
@@ -38,10 +38,13 @@ void questionMusic(char choice) {
 
 		cin >> answer;
 		
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
-		 a1 = 100;
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
+			a1 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
 		else {
 			a1 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
 		}
 
 		break;
@@ -50,10 +53,13 @@ void questionMusic(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			b1 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
 		else {
 			b1 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
 		}
 
 		break;
@@ -62,10 +68,13 @@ void questionMusic(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			c1 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
 		else {
 			c1 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
 		}
 
 		break;
@@ -74,10 +83,13 @@ void questionMusic(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			d1 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
 		else {
 			d1 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
 		}
 
 		break;
@@ -86,21 +98,25 @@ void questionMusic(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			e1 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
 		else {
 			e1 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
 		}
 
 		break;
 	default:
-		
+		cout << "INVALID CHOICE" << endl;
 
 	}
 
+	return a1 + b1 + c1 + d1 + e1;
 }
 
-void questionLiterature(char choice) {
+int questionLiterature(char choice) {
 	int a2 = 0;
 	int b2 = 0;
 	int c2 = 0;
@@ -115,10 +131,13 @@ void questionLiterature(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			a2 = 100;
+			cout << "CORRECT - YOU WIN 100 POINTS" << endl;
+		}
 		else {
 			a2 = -100;
+			cout << "INCORRECT - YOU LOSE 100 POINTS" << endl;
 		}
 
 		break;
@@ -127,10 +146,13 @@ void questionLiterature(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			b2 = 200;
+			cout << "CORRECT - YOU WIN 200 POINTS" << endl;
+		}
 		else {
 			b2 = -200;
+			cout << "INCORRECT - YOU LOSE 200 POINTS" << endl;
 		}
 
 		break;
@@ -139,10 +161,13 @@ void questionLiterature(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			c2 = 300;
+			cout << "CORRECT - YOU WIN 300 POINTS" << endl;
+		}
 		else {
 			c2 = -300;
+			cout << "INCORRECT - YOU LOSE 300 POINTS" << endl;
 		}
 
 		break;
@@ -151,10 +176,13 @@ void questionLiterature(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			d2 = 400;
+			cout << "CORRECT - YOU WIN 400 POINTS" << endl;
+		}
 		else {
 			d2 = -400;
+			cout << "INCORRECT - YOU LOSE 400 POINTS" << endl;
 		}
 
 		break;
@@ -163,21 +191,25 @@ void questionLiterature(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
-			e2 = 400;
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
+			e2 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
 		else {
-			e2 = -400;
+			e2 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
 		}
 
 		break;
 	default:
-
+		cout << "INVALID CHOICE" << endl;
 
 	}
 
+	return a2 + b2 + c2 + d2 + e2;
 }
 
-void questionHistory(char choice) {
+int questionHistory(char choice) {
 	int a3 = 0;
 	int b3 = 0;
 	int c3 = 0;
@@ -240,21 +272,25 @@ void questionHistory(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			e3 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
 		else {
 			e3 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
 		}
 
 		break;
 	default:
-
+		cout << "INVALID CHOICE" << endl;
 
 	}
 
+	return a3 + b3 + c3 + d3 + e3;
 }
 
-void questionPeople(char choice) {
+int questionPeople(char choice) {
 	int a4 = 0;
 	int b4 = 0;
 	int c4 = 0;
@@ -318,21 +354,25 @@ void questionPeople(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			e4 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
 		else {
 			e4 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
 		}
 
 		break;
 	default:
-
+		cout << "INVALID CHOICE" << endl;
 
 	}
 
+	return a4 + b4 + c4 + d4 + e4;
 }
 
-void questionScience(char choice) {
+int questionScience(char choice) {
 	int a5 = 0;
 	int b5 = 0;
 	int c5 = 0;
@@ -395,21 +435,25 @@ void questionScience(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			e5 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
 		else {
 			e5 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
 		}
 
 		break;
 	default:
-
+		cout << "INVALID CHOICE" << endl;
 
 	}
 
+	return a5 + b5 + c5 + d5 + e5;
 }
 
-void questionChristmas(char choice) {
+int questionChristmas(char choice) {
 	int a6 = 0;
 	int b6 = 0;
 	int c6 = 0;
@@ -472,18 +516,22 @@ void questionChristmas(char choice) {
 
 		cin >> answer;
 
-		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer")
+		if (answer == "actual answer" || answer == "actual answer" || answer == "actual answer") {
 			e6 = 500;
+			cout << "CORRECT - YOU WIN 500 POINTS" << endl;
+		}
 		else {
 			e6 = -500;
+			cout << "INCORRECT - YOU LOSE 500 POINTS" << endl;
 		}
 
 		break;
 	default:
-
-
+		cout << "INVALID CHOICE" << endl;
+		
 	}
 
+	return a6 + b6 + c6 + d6 + e6;
 }
 
 
@@ -493,6 +541,7 @@ int main()
 	string category;
 	char choice;
 	int points = 0;
+	int catcher;
 	
 	cout << "What is your name?" << endl;
 	
@@ -506,9 +555,9 @@ int main()
 	
 	cout << "2. You win the number of points assigned to each question if you get it right, but lose the number of points assigned to each question if you get it wrong" << endl;
 	
-	//cout << "3. You have 30 seconds to answer each question" << endl;
+	//cout << "You have 30 seconds to answer each question?" << endl;
 	
-	cout << "4. Have fun!" << endl;
+	cout << "3. Have fun!" << endl;
 	
 	cout << "Lets get started!!" << endl;
 	
@@ -516,24 +565,46 @@ int main()
 
 	for(int i = 1; i <= 30; i++) {
 		board();
+
 		cin >> category;
-		cin >> choice;
-		if (category == "music" || category == "Music" || category == "MUSIC")
-			questionMusic(choice);
-		else if (category == "literature" || category == "Literature" || category == "LITERATURE")
-			questionLiterature(choice);
-		else if (category == "history" || category == "History" || category == "HISTORY")
-			questionHistory(choice);
-		else if (category == "people" || category == "People" || category == "PEOPLE")
-			questionPeople(choice);
-		else if (category == "science" || category == "Science" || category == "SCIENCE")
-			questionScience(choice);
-		else if (category == "christmas" || category == "Christmas" || category == "CHRISTMAS")
-			questionChristmas(choice);
 		
+		cin >> choice;
+		
+		if (category == "music" || category == "Music" || category == "MUSIC") {
+			questionMusic(choice);
+			catcher = questionMusic(choice);
+		}
+
+		else if (category == "literature" || category == "Literature" || category == "LITERATURE") {
+			questionLiterature(choice);
+			catcher = questionLiterature(choice);
+		}
+
+		else if (category == "history" || category == "History" || category == "HISTORY") {
+			questionHistory(choice);
+			catcher = questionHistory(choice);
+		}
+
+		else if (category == "people" || category == "People" || category == "PEOPLE") {
+			questionPeople(choice);
+			catcher = questionPeople(choice);
+		}
 			
+		else if (category == "science" || category == "Science" || category == "SCIENCE"){
+			questionScience(choice);
+			catcher = questionScience(choice);
+		}
+			
+		else if (category == "christmas" || category == "Christmas" || category == "CHRISTMAS") {
+			questionChristmas(choice);
+			catcher = questionChristmas(choice);
+		}
+				
+		points = points + catcher;
 	}
 		
-		
+	cout << "YOUR FINAL RESULT IS: " << points << "!!" << endl;
+	
+	cout << "CONGRATULATIONS" << endl;
 
 }
