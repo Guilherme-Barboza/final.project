@@ -237,7 +237,7 @@ int questionLiterature(int choice) {
 	return a2 + b2 + c2 + d2 + e2;
 }
 
-int questionHistory(int choice) {
+int questionPeople(int choice) {
 	int a3 = 0;
 	int b3 = 0;
 	int c3 = 0;
@@ -340,7 +340,7 @@ int questionHistory(int choice) {
 	return a3 + b3 + c3 + d3 + e3;
 }
 
-int questionPeople(int choice) {
+int questionHistory(int choice) {
 	int a4 = 0;
 	int b4 = 0;
 	int c4 = 0;
@@ -649,7 +649,7 @@ int questionChristmas(int choice) {
 	return a6 + b6 + c6 + d6 + e6;
 }
 
-int questionMovies(int choice) {
+int questionFilms(int choice) {
 	int a7 = 0;
 	int b7 = 0;
 	int c7 = 0;
@@ -752,7 +752,7 @@ int questionMovies(int choice) {
 	return a7 + b7 + c7 + d7 + e7;
 }
 
-int questionSports(int choice) {
+int questionAthletics(int choice) {
 	int a8 = 0;
 	int b8 = 0;
 	int c8 = 0;
@@ -863,11 +863,13 @@ int main()
 	int points = 0;
 	int catcher;
 	
-	cout << "What is your name?" << endl;
+	cout << "Hello! What is your name?" << endl;
 	
 	cin >> name;
 	
-	cout << "This is Jeopardy (the hard version) " << name << "!" << endl;
+	cout << "This is Jeopardy (the hard version)!!" << endl;
+
+	cout << "Our contender today is " << name << "!!!" << endl;
 	
 	cout << "The rules are simple:" << endl;
 	
@@ -881,7 +883,7 @@ int main()
 	
 	cout << "Lets get started!!" << endl;
 	
-	cout << "Today we have 8 categories: MUSIC - LITERATURE - HISTORY - PEOPLE - SCIENCE - CHRISTMAS - MOVIES - ATHLETICS" << endl;
+	cout << "Today we have 8 categories: MUSIC - LITERATURE - HISTORY - PEOPLE - SCIENCE - CHRISTMAS - FILMS - ATHLETICS" << endl;
 
 	string a = "100";
 	string b = "200";
@@ -1042,7 +1044,7 @@ int main()
 
 		else if (categoryChar == 'F') {
 			cout << "Films for " << choice << " points:" << endl;
-			catcher = questionLiterature(choice);
+			catcher = questionFilms(choice);
 			if (choice == 100) {
 				changeBoard = 6;
 			}
@@ -1064,15 +1066,15 @@ int main()
 
 		else if (categoryChar == 'A') {
 		cout << "Athletics for " << choice << " points:" << endl;
-		catcher = questionLiterature(choice);
+		catcher = questionAthletics(choice);
 		if (choice == 100) {
-			changeBoard = 9;
+			changeBoard = 7;
 		}
 		else if (choice == 200) {
-			changeBoard = 17;
+			changeBoard = 15;
 		}
 		else if (choice == 300) {
-			changeBoard = 25;
+			changeBoard = 23;
 		}
 		else if (choice == 400) {
 			changeBoard = 31;
